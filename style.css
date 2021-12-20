@@ -44,7 +44,7 @@ header .row.clearfix div[class^="col"] {
     float: left;
 }
 
-header .col-left .logo {
+.col-left .logo {
     width: 100px;
     margin: calc((65px - 28px) / 2) 0;
 }
@@ -62,7 +62,7 @@ header .col-nav li {
     font-weight: 500;
 }
 
-header .col-right {
+.col-right {
     margin: calc((65px - 25px)/2) 0;
 }
 
@@ -107,7 +107,7 @@ header .container .row:nth-child(2) {
 }
 
 
-section:nth-child(2n) {
+#section-2 , #section-4 {
     background: #F6F6F6;
 }
 
@@ -166,6 +166,10 @@ section p {
     padding-left: 130px;
 }
 
+#section-4 {
+    padding-bottom: 115px;
+}
+
 #section-4 h2 {
     padding-top: 180px;
 }
@@ -176,6 +180,7 @@ section p {
 
 #section-4 .stars {
     background: url("img/stars.svg") no-repeat;
+    background-color: #F6F6F6;
     background-position: center;
     line-height: 60px;
 }
@@ -187,7 +192,16 @@ section p {
     padding: 9px 13px;
     border-radius: 25px;
     font-size: 15px;
-    margin-bottom: 115px;
+}
+
+div.wave {
+    width: 100%;
+    height: 50px;
+    background-color: #F6F6F6;
+    background-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask: url(img/wave.svg);
+    mask: url(img/wave.svg);
 }
 
 footer {
@@ -207,6 +221,7 @@ footer .col-4 {
 
 footer .col-2 {
     width: calc(100% / 6);
+    margin-left: 20px;
 }
 
 footer h3 {
@@ -230,7 +245,24 @@ footer .social li {
     margin-right: 20px;
 }
 
+footer .col-2 li:first-child {
+    color: #7289DA;
+}
 
+footer ul li {
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+footer .col-right .register {
+    background-color: #7289DA;
+    color: white;
+    font-size: 13px;
+    padding: 7px 11px;
+    border-radius: 25px;
+}
  
 
 /* DEBUG */
@@ -239,6 +271,3 @@ footer .social li {
     border: 1px dashed red;
 }
 
-.debug .col-nav {
-    border: 1px dashed green;
-}
