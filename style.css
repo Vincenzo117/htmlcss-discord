@@ -28,9 +28,11 @@ ul {
 
 header {
     background: url(img/jumbo.png);
+    background-size: cover;
+    color: white;
 }
 
-header .row div[class^="col"] {
+header .row.clearfix div[class^="col"] {
     float: left;
 }
 
@@ -40,15 +42,14 @@ header .col-left .logo {
 }
 
 header .col-nav {
-    width: calc(100% - 100px - 56px - 205px - 185px);
-    margin: 0 205px 0 185px;
+    width: calc(100% - 100px - 62px - 155px - 135px);
+    margin: 0 155px 0 135px;
 }
 
 header .col-nav li {
     float: left;
     line-height: 65px;
-    color: white;
-    font-size: 11px;
+    font-size: 14px;
     width: 20%;
     font-weight: 500;
 }
@@ -59,15 +60,43 @@ header .col-right {
 
 header .col-right .log-in {
     background-color: white;
-    font-size: 11px;
+    color: black;
+    font-size: 13px;
     padding: 7px 11px;
-    border-radius: 12px;
+    border-radius: 25px;
 }
 
+header h1 {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
 
+header p {
+    margin-bottom: 27px;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 16px;
+}
 
+header .container .row:nth-child(2) {
+    padding: 90px 170px 130px 170px;
+}
 
+.actions .download {
+    color: black;
+    margin-right: 23px;
+    background-color: white;
+    padding: 9px 13px;
+    border-radius: 25px;
+    font-size: 15px ;
+}
 
+.actions .open-browser {
+    background-color: #23272A;
+    padding: 9px 13px;
+    border-radius: 25px;
+    font-size: 15px ;
+}
 
 
 /* DEBUG */
